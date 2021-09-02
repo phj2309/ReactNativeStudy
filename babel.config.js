@@ -1,0 +1,15 @@
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+
+  plugins: [
+    'babel-plugin-root-import',
+    {
+      alias: {
+        '~': './src',
+        '@assets': './src/assets',
+        '@components': './src/components',
+        '@pages': './src/pages',
+      },
+    },
+  ],
+};

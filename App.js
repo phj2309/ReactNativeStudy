@@ -15,12 +15,13 @@ const App = () => {
       initialRouteName: 'Main',
     },
   );
-  const AppContainer = createAppContainer(RootStack);
+  //const AppContainer = createAppContainer(RootStack);
   return (
     // <SafeAreaView style={styles.backgroundStyle}>
     //   <Text>Hello</Text>
     // </SafeAreaView>
-    <AppContainer />
+    // <AppContainer />
+    <></>
   );
 };
 

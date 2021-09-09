@@ -1,10 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Background = styled.SafeAreaView`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`;
+export const Background = styled.ScrollView``;
 
 export const TitleWrapper = styled.View`
   width: 100%;
@@ -21,12 +17,7 @@ export const Title = styled.Text`
 `;
 
 export const Content = styled.View`
-  width: 90%;
-  flex: 6;
-  color: rgb(19, 19, 19);
-  text-align: center;
-  font-size: 36px;
-  background-color: #8fbc8f;
+  align-items: center;
   border-radius: 50px;
 `;
 

@@ -26,8 +26,8 @@ export const Content = styled.View`
   color: rgb(19, 19, 19);
   text-align: center;
   font-size: 36px;
-  background-color: #8fbc8f;
-  border-radius: 50px;
+  background-color: #d4dfe6;
+  /* border-radius: 50px; */
 `;
 
 export const InputBox = styled.TextInput`

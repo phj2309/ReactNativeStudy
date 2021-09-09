@@ -9,7 +9,7 @@ const Wrapper = () => {
   return (
     <Background>
       <TitleWrapper>
-        <Title>Jurr Todo List</Title>
+        <Title>Todo List</Title>
       </TitleWrapper>
       <Content>
         <TodoInsert />

@@ -14,9 +14,10 @@ import TodoItem from '@components/TodoItem';
 const TodoList = () => {
   return (
     <Background>
-      <Content>
-        <TodoItem />
-      </Content>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </Background>
   );
 };

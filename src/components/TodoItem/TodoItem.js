@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {TouchableOpacity} from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 
 import {
   Background,
@@ -10,6 +10,7 @@ import {
   InputBox,
   ItemWrapper,
   PlusImage,
+  DeleteImage,
 } from './TodoItem.style';
 
 const TodoItem = () => {
@@ -21,6 +22,9 @@ const TodoItem = () => {
         <PlusImage source={require('@assets/images/attachAddIcon.png')} />
       </TouchableOpacity>
       <Content></Content>
+      <TouchableOpacity onPress={() => setCheck(!check)}>
+        <DeleteImage source={require('@assets/images/attachDeleteIcon.png')} />
+      </TouchableOpacity>
     </Background>
   );
 };

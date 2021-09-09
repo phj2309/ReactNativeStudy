@@ -8,6 +8,7 @@ export const Background = styled.View`
   /* border-bottom-width: 1px;
   border-color: #a593e0; */
   margin: 5px 20px;
+  padding: 0 10px;
   background-color: #b3cde3;
   border-radius: 20px;
 `;
@@ -58,4 +59,10 @@ export const Content = styled.View`
   font-size: 36px;
   background-color: #8fbc8f;
   border-radius: 50px;
+`;
+
+export const DeleteImage = styled.Image`
+  width: 30px;
+  height: 30px;
+  resize-mode: contain;
 `;

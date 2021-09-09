@@ -20,13 +20,6 @@ export const TitleWrapper = styled.View`
   align-items: center;
 `;
 
-export const Title = styled.Text`
-  color: rgb(19, 19, 19);
-  font-size: 36px;
-  text-align: center;
-  align-items: center;
-`;
-
 export const InputBox = styled.TextInput`
   color: rgb(19, 19, 19);
   font-size: 15px;
@@ -54,11 +47,13 @@ export const PlusImage = styled.Image`
 
 export const Content = styled.View`
   flex: 4;
-  color: rgb(19, 19, 19);
-  text-align: center;
-  font-size: 36px;
-  background-color: #8fbc8f;
+  padding-left: 10px;
   border-radius: 50px;
+`;
+
+export const ItemTxt = styled.Text`
+  color: #646464;
+  font-size: 20px;
 `;
 
 export const DeleteImage = styled.Image`

@@ -4,11 +4,8 @@ import {TouchableOpacity, Text} from 'react-native';
 
 import {
   Background,
-  TitleWrapper,
-  Title,
   Content,
-  InputBox,
-  ItemWrapper,
+  ItemTxt,
   PlusImage,
   DeleteImage,
 } from './TodoItem.style';
@@ -21,7 +18,9 @@ const TodoItem = () => {
       <TouchableOpacity onPress={() => setCheck(!check)}>
         <PlusImage source={require('@assets/images/attachAddIcon.png')} />
       </TouchableOpacity>
-      <Content></Content>
+      <Content>
+        <ItemTxt>dafdfasdfasdfas</ItemTxt>
+      </Content>
       <TouchableOpacity onPress={() => setCheck(!check)}>
         <DeleteImage source={require('@assets/images/attachDeleteIcon.png')} />
       </TouchableOpacity>

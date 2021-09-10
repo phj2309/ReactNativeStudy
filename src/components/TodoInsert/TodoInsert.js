@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native';
 
 import {InsertWrapper, InputBox, AddBtn, PlusImage} from './TodoInsert.style';
 
-const TodoInsert = () => {
+const TodoInsert = ({onInsert}) => {
   const [item, setItem] = useState('');
 
   const onChangeText = text => {
@@ -12,6 +12,7 @@ const TodoInsert = () => {
   };
 
   const addItem = () => {
+    onInsert(item);
     setItem('');
   };
 

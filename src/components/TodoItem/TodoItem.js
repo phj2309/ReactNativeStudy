@@ -13,15 +13,21 @@ import {
 const TodoItem = () => {
   const [check, setCheck] = useState(false);
 
+  const onDelete = () => {};
+
   return (
     <Background>
       <TouchableOpacity onPress={() => setCheck(!check)}>
-        <PlusImage source={require('@assets/images/attachAddIcon.png')} />
+        {check ? (
+          <PlusImage source={require('@assets/images/dry-clean.png')} />
+        ) : (
+          <PlusImage source={require('@assets/images/check-mark.png')} />
+        )}
       </TouchableOpacity>
       <Content>
-        <ItemTxt>dafdfasdfasdfas</ItemTxt>
+        <ItemTxt></ItemTxt>
       </Content>
-      <TouchableOpacity onPress={() => setCheck(!check)}>
+      <TouchableOpacity onPress={() => onDelete()}>
         <DeleteImage source={require('@assets/images/attachDeleteIcon.png')} />
       </TouchableOpacity>
     </Background>

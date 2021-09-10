@@ -11,13 +11,16 @@ import {
 
 import TodoItem from '@components/TodoItem';
 
-const TodoList = () => {
+const TodoList = ({todoItem}) => {
   return (
     <Background>
+      {todoItem.map(todoItem => (
+        <TodoItem key={todoItem.id} {...todoItem} />
+      ))}
+      {/* <TodoItem />
       <TodoItem />
       <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <TodoItem /> */}
     </Background>
   );
 };

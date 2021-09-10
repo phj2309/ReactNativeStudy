@@ -10,7 +10,7 @@ import {
   DeleteImage,
 } from './TodoItem.style';
 
-const TodoItem = () => {
+const TodoItem = ({textValue}) => {
   const [check, setCheck] = useState(false);
 
   const onDelete = () => {};
@@ -25,7 +25,7 @@ const TodoItem = () => {
         )}
       </TouchableOpacity>
       <Content>
-        <ItemTxt></ItemTxt>
+        <ItemTxt>{textValue}</ItemTxt>
       </Content>
       <TouchableOpacity onPress={() => onDelete()}>
         <DeleteImage source={require('@assets/images/attachDeleteIcon.png')} />

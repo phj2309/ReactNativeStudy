@@ -12,7 +12,6 @@ const Wrapper = () => {
 
   const insertItem = text => {
     setTodoItem([...todoItem, {id: index, textValue: text, checked: false}]);
-    console.log(todoItem);
   };
 
   return (
@@ -22,7 +21,7 @@ const Wrapper = () => {
       </TitleWrapper>
       <Content>
         <TodoInsert onInsert={insertItem} />
-        <TodoList />
+        <TodoList todoItem={todoItem} />
       </Content>
     </Background>
   );

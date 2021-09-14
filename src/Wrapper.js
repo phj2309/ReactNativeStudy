@@ -14,6 +14,10 @@ const Wrapper = () => {
     setTodoItem([...todoItem, {id: index, textValue: text, checked: false}]);
   };
 
+  const onDelete = id => {
+    setTodoItem(todoItem.filter(todoItem => todoItem.id !== id));
+  };
+
   return (
     <Background>
       <TitleWrapper>
@@ -21,7 +25,7 @@ const Wrapper = () => {
       </TitleWrapper>
       <Content>
         <TodoInsert onInsert={insertItem} />
-        <TodoList todoItem={todoItem} />
+        <TodoList todoItem={todoItem} onDelete={onDelete} />
       </Content>
     </Background>
   );

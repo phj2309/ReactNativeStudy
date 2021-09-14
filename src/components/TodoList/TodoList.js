@@ -11,16 +11,12 @@ import {
 
 import TodoItem from '@components/TodoItem';
 
-const TodoList = ({todoItem}) => {
+const TodoList = ({todoItem, onDelete}) => {
   return (
     <Background>
       {todoItem.map(todoItem => (
-        <TodoItem key={todoItem.id} {...todoItem} />
+        <TodoItem key={todoItem.id} {...todoItem} onDelete={onDelete} />
       ))}
-      {/* <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem /> */}
     </Background>
   );
 };

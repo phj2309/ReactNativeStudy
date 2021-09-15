@@ -9,6 +9,9 @@ const TodoInsert = ({onInsert}) => {
 
   const onChangeText = text => {
     setItem(text);
+    // if(text === enter) {
+    //   addItem()
+    // }
   };
 
   const addItem = () => {
@@ -22,6 +25,8 @@ const TodoInsert = ({onInsert}) => {
         placeholder="Add an item"
         value={item}
         onChangeText={onChangeText}
+        multiline={false}
+        maxLength={15}
       />
       <AddBtn>
         <TouchableOpacity onPress={() => addItem()}>

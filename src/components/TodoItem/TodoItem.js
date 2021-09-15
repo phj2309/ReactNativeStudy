@@ -10,22 +10,24 @@ import {
   DeleteImage,
 } from './TodoItem.style';
 
-const TodoItem = ({textValue, onDelete}) => {
+const TodoItem = ({textValue, id, onDelete}) => {
   const [check, setCheck] = useState(false);
 
-  // const onDelete = () => {};
+  const checkToggle = () => {
+    setCheck(!check);
+  };
 
   return (
     <Background>
-      <TouchableOpacity onPress={() => setCheck(!check)}>
+      <TouchableOpacity onPress={() => checkToggle()}>
         {check ? (
-          <PlusImage source={require('@assets/images/dry-clean.png')} />
-        ) : (
           <PlusImage source={require('@assets/images/check-mark.png')} />
+        ) : (
+          <PlusImage source={require('@assets/images/dry-clean.png')} />
         )}
       </TouchableOpacity>
       <Content>
-        <ItemTxt>{textValue}</ItemTxt>
+        <ItemTxt textLine={check}>{textValue}</ItemTxt>
       </Content>
       <TouchableOpacity onPress={() => onDelete(id)}>
         <DeleteImage source={require('@assets/images/attachDeleteIcon.png')} />

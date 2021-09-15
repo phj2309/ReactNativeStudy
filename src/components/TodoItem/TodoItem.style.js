@@ -54,6 +54,9 @@ export const Content = styled.View`
 export const ItemTxt = styled.Text`
   color: #646464;
   font-size: 20px;
+
+  text-decoration: ${({textLine}) =>
+    textLine ? 'line-through #646464' : 'none'};
 `;
 
 export const DeleteImage = styled.Image`
